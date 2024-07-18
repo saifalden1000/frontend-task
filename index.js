@@ -10,7 +10,7 @@ let chartInstance;
 
 async function fetchData() {
   try {
-    let response = await fetch(`../data.json`);
+    let response = await fetch("data.json");
     let data = await response.json();
     customers = data.customers;
     transactions = data.transactions;
